@@ -24,7 +24,7 @@ node {
     sh 'docker push krishnaramesh/nodeapp'
  
   }
-	 stage('Upload Image to DockerHub'){
+	 stage('Run Docker Locally'){
 	sh 'docker run -p 49160:8080 -d krishnaramesh/nnodeapp'
 	 }
 	
