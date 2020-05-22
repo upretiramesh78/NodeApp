@@ -1,7 +1,5 @@
 node {
-    def app
-
-    stage('Clone repository') {
+   stage('Clone repository') {
          git 'https://github.com/upretiramesh78/NodeApp.git'        
     }
 
