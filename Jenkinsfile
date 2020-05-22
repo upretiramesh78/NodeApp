@@ -25,7 +25,7 @@ node {
  
   }
 	 stage('Upload Image to DockerHub'){
-	 docker run -p 49160:8080 -d krishnaramesh/nnodeapp
+	sh 'docker run -p 49160:8080 -d krishnaramesh/nnodeapp'
 	 }
 	
 }
