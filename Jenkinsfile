@@ -4,7 +4,7 @@ node {
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
          git 'https://github.com/upretiramesh78/NodeApp.git'
-        checkout scm
+        
     }
 
     stage('Build image') {
