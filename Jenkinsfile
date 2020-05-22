@@ -3,7 +3,7 @@ node {
 
     stage('Clone repository') {
         /* Cloning the Repository to our Workspace */
-
+         git 'https://github.com/upretiramesh78/rameshdemo2020'
         checkout scm
     }
 
