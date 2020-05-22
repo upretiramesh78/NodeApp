@@ -19,6 +19,9 @@ node {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
 		*/
+	  withCredentials([string(credentialsId: 'docker-hub', variable: 'password')]) {
+        sh "docker login -u krishnaramesh -p Gopal@123"
+        }
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
             app.push("${env.BUILD_NUMBER}")
             app.push("latest")
