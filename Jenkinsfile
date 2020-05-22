@@ -22,7 +22,7 @@ node {
       sh "docker login -u krishnaramesh -p ${password}"
     }
     sh 'docker push krishnaramesh/nodeapp'
-  }
+ 
   }
 	
 	
