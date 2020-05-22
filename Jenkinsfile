@@ -19,7 +19,8 @@ node {
         /* 
 			You would need to first register with DockerHub before you can push images to your account
 		*/
-	  withCredentials([string(credentialsId: 'docker-hub', variable: 'password')]) {
+
+	  withCredentials([string(credentialsId: 'Docker_Hub_Pwd', variable: 'password')]) {
         sh "docker login -u krishnaramesh -p Gopal@123"
         }
         docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
